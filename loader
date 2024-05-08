@@ -1,0 +1,348 @@
+local function Load()
+local CheatClient = Instance.new("ScreenGui")
+local Home = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local Scriptbox = Instance.new("TextBox")
+local RunBox = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Clearbox = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local SettingsButton = Instance.new("ImageButton")
+local SettingsFrame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Settings = Instance.new("TextLabel")
+local Close = Instance.new("TextLabel")
+local Close_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+
+CheatClient.Name = "CheatClient"
+CheatClient.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CheatClient.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Home.Name = "Home"
+Home.Parent = CheatClient
+Home.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.136764705, 0, 0.306397319, 0)
+Home.Size = UDim2.new(0, 486, 0, 265)
+
+TextLabel.Parent = Home
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 1, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 486, 0, 28)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Cheat Client [F1]"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = Home
+
+Scriptbox.Name = "Scriptbox"
+Scriptbox.Parent = Home
+Scriptbox.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Scriptbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scriptbox.BorderSizePixel = 0
+Scriptbox.Position = UDim2.new(0.026748972, 0, 0.132075474, 0)
+Scriptbox.Size = UDim2.new(0, 460, 0, 178)
+Scriptbox.Font = Enum.Font.FredokaOne
+Scriptbox.PlaceholderText = "Cheat Client"
+Scriptbox.Text = ""
+Scriptbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scriptbox.TextSize = 14.000
+Scriptbox.TextWrapped = true
+Scriptbox.TextXAlignment = Enum.TextXAlignment.Left
+Scriptbox.TextYAlignment = Enum.TextYAlignment.Top
+
+RunBox.Name = "RunBox"
+RunBox.Parent = Home
+RunBox.BackgroundColor3 = Color3.fromRGB(238, 91, 65)
+RunBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RunBox.BorderSizePixel = 0
+RunBox.Position = UDim2.new(0.0226337444, 0, 0.841509461, 0)
+RunBox.Size = UDim2.new(0, 165, 0, 34)
+RunBox.Font = Enum.Font.FredokaOne
+RunBox.Text = "Run box"
+RunBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+RunBox.TextScaled = true
+RunBox.TextSize = 14.000
+RunBox.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = RunBox
+
+Clearbox.Name = "Clearbox"
+Clearbox.Parent = Home
+Clearbox.BackgroundColor3 = Color3.fromRGB(52, 136, 238)
+Clearbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clearbox.BorderSizePixel = 0
+Clearbox.Position = UDim2.new(0.378600836, 0, 0.841509461, 0)
+Clearbox.Size = UDim2.new(0, 154, 0, 34)
+Clearbox.Font = Enum.Font.FredokaOne
+Clearbox.Text = "Clear box"
+Clearbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clearbox.TextScaled = true
+Clearbox.TextSize = 14.000
+Clearbox.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = Clearbox
+
+SettingsButton.Name = "SettingsButton"
+SettingsButton.Parent = Home
+SettingsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingsButton.BackgroundTransparency = 1.000
+SettingsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsButton.BorderSizePixel = 0
+SettingsButton.Position = UDim2.new(0.919753075, 0, 0.864150941, 0)
+SettingsButton.Size = UDim2.new(0, 39, 0, 36)
+SettingsButton.Image = "rbxassetid://2790678226"
+
+SettingsFrame.Name = "SettingsFrame"
+SettingsFrame.Parent = Home
+SettingsFrame.BackgroundColor3 = Color3.fromRGB(32, 31, 32)
+SettingsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsFrame.BorderSizePixel = 0
+SettingsFrame.Position = UDim2.new(0.238683134, 0, 0.0377358496, 0)
+SettingsFrame.Size = UDim2.new(0, 253, 0, 245)
+SettingsFrame.Visible = false
+
+UICorner_4.CornerRadius = UDim.new(0, 3)
+UICorner_4.Parent = SettingsFrame
+
+Settings.Name = "Settings"
+Settings.Parent = SettingsFrame
+Settings.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderSizePixel = 0
+Settings.Size = UDim2.new(0, 253, 0, 25)
+Settings.Font = Enum.Font.FredokaOne
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextScaled = true
+Settings.TextSize = 14.000
+Settings.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = SettingsFrame
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0, 0, 0.171428576, 0)
+Close.Size = UDim2.new(0, 148, 0, 35)
+Close.Font = Enum.Font.FredokaOne
+Close.Text = "Close Game"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+Close_2.Name = "Close"
+Close_2.Parent = SettingsFrame
+Close_2.BackgroundColor3 = Color3.fromRGB(238, 91, 65)
+Close_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.651092172, 0, 0.184366524, 0)
+Close_2.Size = UDim2.new(0, 81, 0, 32)
+Close_2.Font = Enum.Font.FredokaOne
+Close_2.Text = "Run CMD"
+Close_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.TextScaled = true
+Close_2.TextSize = 14.000
+Close_2.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Close_2
+
+Home.Active = true
+Home.Draggable = true
+SettingsFrame.Visible = true
+SettingsFrame.Transparency = 1
+Close.TextTransparency = 1
+Close_2.BackgroundTransparency = 1
+Settings.TextTransparency = 1
+Settings.Visible = false
+Close_2.Visible = false
+
+Close_2.MouseButton1Click:Connect(function()
+	game:shutdown()
+end)
+
+RunBox.MouseButton1Click:Connect(function()
+	pcall(Scriptbox.Text)
+end)
+
+Clearbox.MouseButton1Click:Connect(function()
+	Scriptbox.Text = ""
+end)
+
+local active = false
+SettingsButton.MouseButton1Click:Connect(function()
+	if not active then
+	active = true
+	local TweenService = game:GetService("TweenService")
+	local T1 = TweenService:Create(SettingsFrame, TweenInfo.new(1), {BackgroundTransparency = 0})
+	local T2 = TweenService:Create(Close, TweenInfo.new(1), {TextTransparency = 0})
+	local T3 = TweenService:Create(Close_2, TweenInfo.new(1), {BackgroundTransparency = 0})
+	local T4 = TweenService:Create(Settings, TweenInfo.new(1), {TextTransparency = 0})
+		
+		Settings.Visible = true
+		Close_2.Visible = true
+		T1:Play()
+		T2:Play()
+		T3:Play()
+		T4:Play()
+		
+	else
+	if active then
+		active = false
+			local TweenService = game:GetService("TweenService")
+			local T1 = TweenService:Create(SettingsFrame, TweenInfo.new(1), {BackgroundTransparency = 1})
+			local T2 = TweenService:Create(Close, TweenInfo.new(1), {TextTransparency = 1})
+			local T3 = TweenService:Create(Close_2, TweenInfo.new(1), {BackgroundTransparency = 1})
+			local T4 = TweenService:Create(Settings, TweenInfo.new(1), {TextTransparency = 1})
+
+			T1:Play()
+			T2:Play()
+			T3:Play()
+			T4:Play()
+			
+			T3.Completed:Connect(function()
+				Close_2.Visible = false
+			end)
+			
+			T4.Completed:Connect(function()
+				Settings.Visible = false
+			end)
+			
+	end
+	end
+end)
+end)
+
+
+local Key = Instance.new("ScreenGui")
+local KeyHome = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local KeyText = Instance.new("TextLabel")
+local KeyText_2 = Instance.new("TextLabel")
+local keybox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local Enter = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local get = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+
+Key.Name = "Key"
+Key.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Key.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+KeyHome.Name = "KeyHome"
+KeyHome.Parent = Key
+KeyHome.BackgroundColor3 = Color3.fromRGB(32, 31, 32)
+KeyHome.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyHome.BorderSizePixel = 0
+KeyHome.Position = UDim2.new(0.344852954, 0, 0.376053959, 0)
+KeyHome.Size = UDim2.new(0, 422, 0, 231)
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = KeyHome
+
+KeyText.Name = "KeyText"
+KeyText.Parent = KeyHome
+KeyText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeyText.BackgroundTransparency = 1.000
+KeyText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyText.BorderSizePixel = 0
+KeyText.Position = UDim2.new(0.263033181, 0, -0.00865800865, 0)
+KeyText.Size = UDim2.new(0, 200, 0, 50)
+KeyText.Font = Enum.Font.FredokaOne
+KeyText.Text = "Key System"
+KeyText.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyText.TextScaled = true
+KeyText.TextSize = 14.000
+KeyText.TextWrapped = true
+
+KeyText_2.Name = "KeyText"
+KeyText_2.Parent = KeyHome
+KeyText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeyText_2.BackgroundTransparency = 1.000
+KeyText_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyText_2.BorderSizePixel = 0
+KeyText_2.Position = UDim2.new(0.0379146934, 0, 0.277056277, 0)
+KeyText_2.Size = UDim2.new(0, 72, 0, 34)
+KeyText_2.Font = Enum.Font.FredokaOne
+KeyText_2.Text = "Key"
+KeyText_2.TextColor3 = Color3.fromRGB(217, 217, 217)
+KeyText_2.TextScaled = true
+KeyText_2.TextSize = 14.000
+KeyText_2.TextWrapped = true
+
+keybox.Name = "keybox"
+keybox.Parent = KeyHome
+keybox.BackgroundColor3 = Color3.fromRGB(48, 46, 48)
+keybox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keybox.BorderSizePixel = 0
+keybox.Position = UDim2.new(0.0521326996, 0, 0.424242437, 0)
+keybox.Size = UDim2.new(0, 394, 0, 35)
+keybox.Font = Enum.Font.FredokaOne
+keybox.PlaceholderText = "Cheat Client"
+keybox.Text = ""
+keybox.TextColor3 = Color3.fromRGB(255, 255, 255)
+keybox.TextScaled = true
+keybox.TextSize = 14.000
+keybox.TextWrapped = true
+
+UICorner_2.Parent = keybox
+
+Enter.Name = "Enter"
+Enter.Parent = KeyHome
+Enter.BackgroundColor3 = Color3.fromRGB(112, 238, 44)
+Enter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Enter.BorderSizePixel = 0
+Enter.Position = UDim2.new(0.0510699376, 0, 0.651033223, 0)
+Enter.Size = UDim2.new(0, 394, 0, 27)
+Enter.Font = Enum.Font.FredokaOne
+Enter.Text = "Enter"
+Enter.TextColor3 = Color3.fromRGB(255, 255, 255)
+Enter.TextScaled = true
+Enter.TextSize = 14.000
+Enter.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = Enter
+
+get.Name = "get"
+get.Parent = KeyHome
+get.BackgroundColor3 = Color3.fromRGB(112, 238, 44)
+get.BorderColor3 = Color3.fromRGB(0, 0, 0)
+get.BorderSizePixel = 0
+get.Position = UDim2.new(0.0510699376, 0, 0.8112064, 0)
+get.Size = UDim2.new(0, 394, 0, 27)
+get.Font = Enum.Font.FredokaOne
+get.Text = "Get Link"
+get.TextColor3 = Color3.fromRGB(255, 255, 255)
+get.TextScaled = true
+get.TextSize = 14.000
+get.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = get
+
+get.MouseButton1Click:Connect(function()
+get.Text = "keyless"
+get.Interactable = false
+end)
+
+Enter.MouseButton1Click:Connect(function()
+if keybox.Text == "keyless" then
+Load()
+Key:Destroy()
+end
+end)
